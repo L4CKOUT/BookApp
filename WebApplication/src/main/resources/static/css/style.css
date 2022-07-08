@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0;
+    border: 1px solid rgb(218, 248, 84);
+}
+.table tr th{
+    font-family: 'Monoton', cursive;
+    margin: 10px 0px;
+    color: rgb(218, 248, 84);
+    padding: 2px 80px;
+
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 10px 0px;
+    border: 1px solid rgb(218, 248, 84);
+}
+.navbar ul li{
+    font-family: 'Monoton', cursive;
+    font-size: 1.7rem;
+    border: 1px solid rgb(218, 248, 84);
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(218, 248, 84);
+    padding: 2px 80px;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: rgb(203, 28, 28);
+    box-shadow: 0 0 5px white;
+    transition: 0.8s ease;
+}
+
+/* Home Selection */
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: (0, 0, 0, 0.5);
+    height: 840px;
+    font-family: 'BIZ UDMincho', serif;
+    font-size: large;
+    justify-content:  center;
+    align-items: center;
+    color: rgb(218, 248, 84);
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('https://i.pinimg.com/564x/a9/09/93/a909935071762b4e28329d03eab49f93.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 55%;
+
+}
+.table
+
+.headings{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.btn{
+    width: 100px;
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid rgb(218, 248, 84);
+    color: rgb(218, 248, 84);
+    outline: none;
+    transition: 0.8s ease;
+    font-family: 'BIZ UDMincho', serif;
+    font-size: 25px;
+    text-align: center;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 15opx white, 0 0 15px white;
+    font-weight: bold;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 1200px;
+    padding-top: 25px;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgb(14, 13, 13);
+    background: url('https://i.pinimg.com/564x/7a/b2/dd/7ab2dd549c3bad7db172be52a53d6723.jpg') no-repeat center center/cover ;
+    color: rgb(218, 248, 84);
+}
+.headings2{
+    font-family: 'Rock Salt', cursive;
+    font-size: 5rem;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+.glitch{
+    font-size: 6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    font-family: 'Rubik Glitch', cursive;
+
+
+    text-shadow:
+    0.05em 0 0 rgba(255,0,0,.75),
+    -0.025em 0.05em 0 rgba(0,255,0,.75),
+    0.025em 0.05em 0 rgba(0,0,255,.75);
+
+    animation: glitch 750ms infinite;
+}
+.glitch span{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.glitch span:first-child{
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 60, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(0.05em, 0.025em);
+
+}
+
+@keyframes glitch{
+    0%{
+        text-shadow: 0.05em 0 0 rgba(255,0,0,.75),
+        -0.05em 0.025em 0 rgba(0,255,0,.75),
+        -0.025em 0.05em 0 rgba(0,0,255,.75);
+    }
+    14%{
+        text-shadow: 0.05em 0 0 rgba(255,0,0,.75),
+        -0.05em 0.025em 0 rgba(0,255,0,.75),
+        -0.025em 0.05em 0 rgba(0,0,255,.75);
+    }
+    15%{
+        text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75),
+        -0.025em -0.025em 0 rgba(0,255,0,.75),
+        0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    49%{
+        text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75),
+        -0.025em -0.025em 0 rgba(0,255,0,.75),
+        0.05em 0.05em 0 rgba(0,0,255,.75);
+    }
+    50%{
+        text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
+        0.05em 0 0 rgba(0,255,0,0.75),
+        0 -0.05em 0 rgba(0,0,255,0.75);
+    }
+    99%{
+        text-shadow: 0.025em 0.05em 0 rgba(255,0,0,0.75),
+        0.05em 0 0 rgba(0,255,0,0.75),
+        0 -0.05em 0 rgba(0,0,255,0.75);
+    }
+    100%{
+        text-shadow: -0.025em 0 0 rgba(255,0,0,0.75),
+        -0.025em -0.025em 0 rgba(0,255,0,0.75),
+        -0.025em -0.05em 0 rgba(0,0,255,0.75);
+
+    }
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 1210px;
+    height: 410px;
+    /*background-image: url('https://i.pinimg.com/564x/10/90/04/1090043e632991bb83c05eed95d15cd4.jpg');*/
+    border: 1px solid rgb(218, 248, 84);
+    color: rgb(218, 248, 84);
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 220%;
+    opacity: 0;
+
+
+
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding-left: 20px;
+    padding-top: 50px;
+    width: 1210px;
+    height: 310px;
+    padding-right: 80px;
+    color: rgb(218, 248, 84);
+    font-size: 20px;
+    font-family: 'BIZ UDMincho', serif;
+    border: 1px solid rgb(218, 248, 84);
+    background-color: black;
+    padding-bottom: 20px;
+
+}
+
+#intro h2{
+    padding-bottom: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}

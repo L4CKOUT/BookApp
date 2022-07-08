@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8"/>
   <title>Books</title>
-  <link rel="stylesheet" th:href="@{/styles.css}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=BIZ+UDMincho&family=Monoton&family=Rock+Salt&family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <link rel="stylesheet"type="text/css"href="/css/style.css"/>
+
 </head>
 <body>
 <nav class="navbar">
@@ -14,17 +18,21 @@
   </ul>
 </nav>
 <h1>Book Registry</h1>
-<table>
+<table class="table">
   <tr>
     <th>ID</th>
     <th>Title</th>
+    <th>ISBN</th>
     <th>Publisher</th>
   </tr>
   <tr th:each="book:${books}">
     <td th:text="${book.id}">123</td>
     <td th:text="${book.title}">Example of Book</td>
+    <td th:text="${book.isbn}">2131313321</td>
     <td th:text="${book.publisher.name}">Publisher</td>
   </tr>
 </table>
 </body>
 </html>
+
+
