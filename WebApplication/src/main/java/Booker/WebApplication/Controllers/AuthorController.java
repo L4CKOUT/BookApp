@@ -1,9 +1,12 @@
 package Booker.WebApplication.Controllers;
 
+
 import Booker.WebApplication.Repositories.AuthorRepository;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@Controller
 public class AuthorController {
 
     private final AuthorRepository authorRepository;
@@ -17,5 +20,6 @@ public class AuthorController {
         model.addAttribute("authors", authorRepository.findAll());
 
         return "authors/list";
+
     }
 }

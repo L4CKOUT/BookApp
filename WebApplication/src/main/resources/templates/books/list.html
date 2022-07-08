@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en"xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8"/>
-    <title>Booker</title>
+  <meta charset="UTF-8"/>
+  <title>Books</title>
+  <link rel="stylesheet" th:href="@{/styles.css}" />
 </head>
 <body>
+<nav class="navbar">
+  <ul>
+    <li><a href="/">HOME</a></li>
+    <li><a href="books">BOOKS</a></li>
+    <li><a href="authors">AUTHOR</a></li>
+  </ul>
+</nav>
 <h1>Book Registry</h1>
 <table>
-    <tr>
-        <th>ID</th>
-        <th>Title</th>
-        <th>Publisher</th>
-    </tr>
-    <tr th:each="book:${books}">
-        <td th:text="${book.id}">123</td>
-        <td th:text="${book.title}">Example of Book</td>
-        <td th:text="${book.publisher.name}">Publisher</td>
-    </tr>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>Publisher</th>
+  </tr>
+  <tr th:each="book:${books}">
+    <td th:text="${book.id}">123</td>
+    <td th:text="${book.title}">Example of Book</td>
+    <td th:text="${book.publisher.name}">Publisher</td>
+  </tr>
 </table>
 </body>
 </html>
-</table>

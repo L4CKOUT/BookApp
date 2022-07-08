@@ -46,6 +46,14 @@ public class Author {
         return books;
     }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
     public void setBooks(Set<Book> books) {
         this.books = books;
     }
