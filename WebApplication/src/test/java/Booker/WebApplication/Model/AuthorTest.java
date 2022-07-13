@@ -10,22 +10,7 @@ import java.util.Set;
 import org.junit.jupiter.api.Test;
 
 class AuthorTest {
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Author#Author()}
-     *   <li>{@link Author#setBooks(Set)}
-     *   <li>{@link Author#setFirstName(String)}
-     *   <li>{@link Author#setId(Long)}
-     *   <li>{@link Author#setLastName(String)}
-     *   <li>{@link Author#toString()}
-     *   <li>{@link Author#getBooks()}
-     *   <li>{@link Author#getFirstName()}
-     *   <li>{@link Author#getId()}
-     *   <li>{@link Author#getLastName()}
-     * </ul>
-     */
+
     @Test
     void testConstructor() {
         Author actualAuthor = new Author();
@@ -42,22 +27,7 @@ class AuthorTest {
         assertEquals("Author{id=123, firstName='Jane', lastName='Doe'}", actualToStringResult);
     }
 
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Author#Author(String, String)}
-     *   <li>{@link Author#setBooks(Set)}
-     *   <li>{@link Author#setFirstName(String)}
-     *   <li>{@link Author#setId(Long)}
-     *   <li>{@link Author#setLastName(String)}
-     *   <li>{@link Author#toString()}
-     *   <li>{@link Author#getBooks()}
-     *   <li>{@link Author#getFirstName()}
-     *   <li>{@link Author#getId()}
-     *   <li>{@link Author#getLastName()}
-     * </ul>
-     */
+
     @Test
     void testConstructor2() {
         Author actualAuthor = new Author("Jane", "Doe");

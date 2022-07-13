@@ -26,9 +26,7 @@ class AuthorControllerTest {
     @MockBean
     private AuthorRepository authorRepository;
 
-    /**
-     * Method under test: {@link AuthorController#getAuthors(Model)}
-     */
+
     @Test
     void testGetAuthors() throws Exception {
         when(authorRepository.findAll()).thenReturn((Iterable<Author>) mock(Iterable.class));

@@ -2,11 +2,12 @@
 <html lang="en"xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8"/>
-  <title>Author</title>
+  <title>Books</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=BIZ+UDMincho&family=Monoton&family=Rock+Salt&family=Rubik+Glitch&display=swap" rel="stylesheet">
   <link rel="stylesheet"type="text/css"href="/css/style.css"/>
+
 </head>
 <body>
 <nav class="navbar">
@@ -16,19 +17,21 @@
     <li><a href="authors">AUTHOR</a></li>
   </ul>
 </nav>
-<h1>Author Registry</h1>
-<table>
-  <tr>
-    <th>ID</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-  </tr>
-  <tr th:each="author:${authors}">
-    <td th:text="${author.id}">123</td>
-    <td th:text="${author.firstName}">Example of Author</td>
-    <td th:text="${author.lastName}">Smith</td>
-  </tr>
-</table>
+<section id="home">
+  <h1 class="headings2">Author   Registry</h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+    </tr>
+    <tr th:each="author:${authors}">
+      <td th:text="${author.id}">123</td>
+      <td th:text="${author.firstName}">Example of Author</td>
+      <td th:text="${author.lastName}">Smith</td>
+    </tr>
+  </table>
+</section>
 
 </body>
 </html>

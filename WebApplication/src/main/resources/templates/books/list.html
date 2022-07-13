@@ -17,21 +17,24 @@
     <li><a href="authors">AUTHOR</a></li>
   </ul>
 </nav>
-<h1>Book Registry</h1>
-<table class="table">
-  <tr>
-    <th>ID</th>
-    <th>Title</th>
-    <th>ISBN</th>
-    <th>Publisher</th>
-  </tr>
-  <tr th:each="book:${books}">
-    <td th:text="${book.id}">123</td>
-    <td th:text="${book.title}">Example of Book</td>
-    <td th:text="${book.isbn}">2131313321</td>
-    <td th:text="${book.publisher.name}">Publisher</td>
-  </tr>
-</table>
+<section id="home">
+  <h1 class="headings2">Book Registry</h1>
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>ISBN</th>
+      <th>Publisher</th>
+    </tr>
+    <tr  th:each="book:${books}">
+      <td th:text="${book.id}">123</td>
+      <td th:text="${book.title}">Example of Book</td>
+      <td th:text="${book.isbn}">2131313321</td>
+      <td th:text="${book.publisher.name}">Publisher</td>
+    </tr>
+  </table>
+</section>
+
 </body>
 </html>
 

@@ -34,9 +34,7 @@ class BookControllerTest {
     private BookRepository bookRepository;
 
 
-    /**
-     * Method under test: {@link BookController#getBooks(Model)}
-     */
+
     @Test
     void testGetBooks() throws Exception {
         when(bookRepository.findAll()).thenReturn((Iterable<Book>) mock(Iterable.class));

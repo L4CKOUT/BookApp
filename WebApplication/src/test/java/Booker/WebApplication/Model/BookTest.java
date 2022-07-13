@@ -11,24 +11,7 @@ import org.junit.jupiter.api.Test;
 class BookTest {
 
 
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Book#Book(String, String)}
-     *   <li>{@link Book#setAuthors(Set)}
-     *   <li>{@link Book#setId(Long)}
-     *   <li>{@link Book#setIsbn(String)}
-     *   <li>{@link Book#setPublisher(Publisher)}
-     *   <li>{@link Book#setTitle(String)}
-     *   <li>{@link Book#toString()}
-     *   <li>{@link Book#getAuthors()}
-     *   <li>{@link Book#getId()}
-     *   <li>{@link Book#getIsbn()}
-     *   <li>{@link Book#getPublisher()}
-     *   <li>{@link Book#getTitle()}
-     * </ul>
-     */
+
     @Test
     void testConstructor2() {
         Book actualBook = new Book("Dr", "Isbn");

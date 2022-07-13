@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 /* Navigation Bar */
 .navbar{
     display: flex;
@@ -14,14 +16,7 @@
     top: 0;
     border: 1px solid rgb(218, 248, 84);
 }
-.table tr th{
-    font-family: 'Monoton', cursive;
-    margin: 10px 0px;
-    color: rgb(218, 248, 84);
-    padding: 2px 80px;
 
-
-}
 .navbar ul{
     display: flex;
     list-style: none;
@@ -53,6 +48,7 @@
     height: 840px;
     font-family: 'BIZ UDMincho', serif;
     font-size: large;
+    padding: 40px;
     justify-content:  center;
     align-items: center;
     color: rgb(218, 248, 84);
@@ -67,6 +63,9 @@
     width: 100%;
     z-index: -1;
 }
+/* BOOKS SECTION */
+.table
+
 .main{
     display: flex;
     flex-direction: column;
@@ -75,11 +74,10 @@
     top: 55%;
 
 }
-.table
 
 .headings{
     font-family: 'Architects Daughter', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     padding-bottom: 20px;
 }
