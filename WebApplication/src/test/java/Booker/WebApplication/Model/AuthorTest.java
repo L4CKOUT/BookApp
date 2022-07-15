@@ -44,9 +44,7 @@ class AuthorTest {
         assertEquals("Author{id=123, firstName='Jane', lastName='Doe'}", actualToStringResult);
     }
 
-    /**
-     * Method under test: {@link Author#equals(Object)}
-     */
+
     @Test
     void testEquals() {
         Author author = new Author();
@@ -57,9 +55,7 @@ class AuthorTest {
         assertNotEquals(author, null);
     }
 
-    /**
-     * Method under test: {@link Author#equals(Object)}
-     */
+
     @Test
     void testEquals2() {
         Author author = new Author();
@@ -70,14 +66,7 @@ class AuthorTest {
         assertNotEquals(author, "Different type to Author");
     }
 
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Author#equals(Object)}
-     *   <li>{@link Author#hashCode()}
-     * </ul>
-     */
+
     @Test
     void testEquals3() {
         Author author = new Author();
@@ -90,14 +79,7 @@ class AuthorTest {
         assertEquals(expectedHashCodeResult, author.hashCode());
     }
 
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Author#equals(Object)}
-     *   <li>{@link Author#hashCode()}
-     * </ul>
-     */
+
     @Test
     void testEquals4() {
         Author author = new Author();
@@ -116,9 +98,7 @@ class AuthorTest {
         assertEquals(expectedHashCodeResult, author1.hashCode());
     }
 
-    /**
-     * Method under test: {@link Author#equals(Object)}
-     */
+
     @Test
     void testEquals5() {
         Author author = new Author();
@@ -135,9 +115,7 @@ class AuthorTest {
         assertNotEquals(author, author1);
     }
 
-    /**
-     * Method under test: {@link Author#equals(Object)}
-     */
+
     @Test
     void testEquals6() {
         Author author = new Author();
@@ -154,14 +132,7 @@ class AuthorTest {
         assertNotEquals(author, author1);
     }
 
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Author#equals(Object)}
-     *   <li>{@link Author#hashCode()}
-     * </ul>
-     */
+
     @Test
     void testEquals7() {
         Author author = new Author();

@@ -39,14 +39,7 @@ class BookTest {
     }
 
 
-    /**
-     * Methods under test:
-     *
-     * <ul>
-     *   <li>{@link Book#equals(Object)}
-     *   <li>{@link Book#hashCode()}
-     * </ul>
-     */
+
     @Test
     void testEquals() {
         Publisher publisher = new Publisher();
